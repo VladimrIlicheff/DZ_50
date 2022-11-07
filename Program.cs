@@ -25,7 +25,7 @@ int[,] InitMatrix(int m, int n)
     {
         for (int j = 0; j < n; j++)
         {
-            resultMatrix[i, j] = rnd.Next(-10, 10);
+            resultMatrix[i, j] = rnd.Next(-15, 15);
         }
     }
 
@@ -58,5 +58,5 @@ PrintMatrix(matrix);
 if (k <= m || l <= n) Console.WriteLine($"Число с таким индексом в массиве есть-->{matrix[k-1,l-1]}");
 else
 {
-    Console.WriteLine($"Число с таким индексом в массиве отсутствует     {k}{l} ");
+    Console.WriteLine($"Число с индексом {k}{l} в массиве отсутствует ");
 }
